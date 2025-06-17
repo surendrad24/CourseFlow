@@ -105,13 +105,13 @@ services:
 
 🌐 Live Demo (if hosted)
 
-[Insert hosted app link here if available]
+### [Insert hosted app link here if available]
 
 ---
 
 📹 Video Walkthrough
 
-[Insert video link here]
+### [Insert video link here]
 
 ---
 
