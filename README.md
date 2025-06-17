@@ -103,19 +103,19 @@ services:
 
 ---
 
-🌐 Live Demo (if hosted)
+## 🌐 Live Demo (if hosted)
 
-### [Insert hosted app link here if available]
-
----
-
-📹 Video Walkthrough
-
-### [Insert video link here]
+[Insert hosted app link here if available]
 
 ---
 
-🙋 Author
+## 📹 Video Walkthrough
+
+[Insert video link here]
+
+---
+
+## 🙋 Author
 
     Name: [Surendra Donthamsetti]
 
@@ -125,7 +125,7 @@ services:
 
 ---
 
-📝 License
+## 📝 License
 
 This project is built for educational and evaluation purposes only.
 
