@@ -31,9 +31,9 @@ CourseFlow is a full-stack containerized web application that allows academic in
 
 ## 📂 Repository Structure
 
-/backend # Django backend with REST API
-/frontend # React frontend UI
-/docker-compose.yml
+- /backend # Django backend with REST API
+- /frontend # React frontend UI
+- /docker-compose.yml
 
 
 ---
@@ -100,12 +100,21 @@ services:
     depends_on:
       - backend
 ```
+
+---
+
 🌐 Live Demo (if hosted)
 
 [Insert hosted app link here if available]
+
+---
+
 📹 Video Walkthrough
 
 [Insert video link here]
+
+---
+
 🙋 Author
 
     Name: [Surendra Donthamsetti]
@@ -114,6 +123,10 @@ services:
 
     Role: Applicant – ASC Software Developer Internship, IIT Bombay
 
+---
+
 📝 License
 
 This project is built for educational and evaluation purposes only.
+
+---
