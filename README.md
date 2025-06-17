@@ -99,8 +99,7 @@ services:
       - "3000:3000"
     depends_on:
       - backend
-
-
+'''
 🌐 Live Demo (if hosted)
 
 [Insert hosted app link here if available]
