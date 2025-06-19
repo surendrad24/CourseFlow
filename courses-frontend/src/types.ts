@@ -13,4 +13,5 @@ export interface Instance {
   year: number;
   semester: number;
   course: number;  // holds the Course.id
+  title: string;
 }

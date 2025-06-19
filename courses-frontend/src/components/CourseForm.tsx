@@ -25,36 +25,39 @@ const CourseForm: React.FC<CourseFormProps> = ({ onCreate }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: '2rem' }}>
+    <form onSubmit={handleSubmit} className='course-form-container'>
       <h2>Add New Course</h2>
       <div>
-        <label>Title</label><br/>
+        {/* <label>Title</label><br/> */}
         <input
+        className='course-field-sm'
           value={title}
           onChange={e => setTitle(e.target.value)}
-          placeholder="Course title"
+          placeholder="Course Title"
           required
         />
       </div>
       <div>
-        <label>Course Code</label><br/>
+        {/* <label>Course Code</label><br/> */}
         <input
+        className='course-field-sm'
           value={courseCode}
           onChange={e => setCourseCode(e.target.value)}
-          placeholder="e.g. CS101"
+          placeholder="Course Code"
           required
         />
       </div>
       <div>
-        <label>Description</label><br/>
+        {/* <label>Description</label><br/> */}
         <textarea
+        className='course-field-sm'
           value={description}
           onChange={e => setDescription(e.target.value)}
-          placeholder="Short description"
+          placeholder="Course description"
           required
         />
       </div>
-      <button type="submit">Create Course</button>
+      <button className='btn-primary' type="submit">Add Course</button>
     </form>
   )
 }

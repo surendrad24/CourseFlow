@@ -12,6 +12,7 @@ export function InstancesPage() {
 
   const handleFetch = async () => {
     const data = await fetchInstances(year, semester)
+    console.log('Fetched instances:', data)
     setInstances(data)
   }
 
@@ -47,7 +48,7 @@ export function InstancesPage() {
           min={1} max={4}
         />
         {' '}
-        <button onClick={handleFetch}>Load Instances</button>
+        <button className='btn-primary' onClick={handleFetch}>Refresh</button>
       </div>
 
       <InstanceForm onCreate={handleCreate} />
