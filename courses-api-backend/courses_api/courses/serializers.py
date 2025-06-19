@@ -12,11 +12,11 @@ class InstanceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Instance
-        fields = ['year', 'semester', 'course']
+        fields = ['year', 'semester', 'course', 'title']
         # composite uniqueness (optional) so you can’t duplicate the same year/semester/course
         validators = [
             serializers.UniqueTogetherValidator(
                 queryset=Instance.objects.all(),
-                fields=['year', 'semester', 'course']
+                fields=['year', 'semester', 'course', 'title']
             )
         ]
