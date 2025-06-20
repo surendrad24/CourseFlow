@@ -1,33 +1,10 @@
-// import React from 'react'
-// import { Instance } from '../types'
-
-// interface InstanceListProps {
-//   instances: Instance[]
-//   onDelete: (year: number, semester: number, courseId: number) => void
-// }
-
-// const InstanceList: React.FC<InstanceListProps> = ({ instances, onDelete }) => (
-//   <ul>
-//     {instances.map(inst => (
-//       <li key={`${inst.year}-${inst.semester}-${inst.course}`}>
-//         Year {inst.year} • Sem {inst.semester} • Course ID {inst.course}{' '}
-//         <button onClick={() => onDelete(inst.year, inst.semester, inst.course)}>
-//           Delete
-//         </button>
-//       </li>
-//     ))}
-//   </ul>
-// )
-
-// export default InstanceList
-
 
 
 // File: src/components/InstanceList.tsx
 import React, { useState, useEffect, useMemo } from 'react';
 import { FaSearch, FaTrash } from 'react-icons/fa';
 import '../pages/courselist.css'; // reuse your styles
-import { fetchInstances, deleteInstance } from '../api'
+import { fetchInstances, deleteInstance,fetchCourses } from '../api'
 import { Instance as InstanceType } from '../types';
 import { Instance } from '../types'
 import { Course } from '../types';
